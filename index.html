@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!--conectar js a html... defer sig q el js debe de cargar despues de que se cargue todo el html-->
+    <script src="./index.js" defer></script>
+    <!--estiloos-->
+    <style>
+        body{
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: auto;/*primero el auto desp el botton**/
+            margin-bottom: 15px;
+        }
+    </style>
+    <!--estiloos-->
+</head>
+<body>
+    <h1>Calculadora HTML Janeth</h1>
+    <!--dentro del form para que al darle enter
+    no se recargue la pag y nos de el resultado de los calculos-->
+    <form action="" method="dialog"><!--method="dialog" para qno recarga la pag-->
+        <!--campos-->
+        <input type="text" id="op1" placeholder="Operador 1">
+        <input type="text" id="operacion" placeholder="+, -, *, /">
+        <input type="text" id="op2" placeholder="Operador 2">
+        <input type="submit" value="Calcular" id="calcular"><!--onclick=calcular()-->
+    </form>
+    
+    <p id="resultado"></p>
+</body>
+</html>
